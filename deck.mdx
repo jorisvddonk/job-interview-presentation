@@ -9,6 +9,7 @@ import {
   Notes
 } from 'mdx-deck'
 import QRCode from "qrcode.react"
+import { Graphviz } from 'graphviz-react'
 
 export const themes = [
   condensed,
@@ -19,27 +20,62 @@ export const themes = [
 
 ---
 
-## Disclaimer!
+### Disclaimer!
 
 The goal of this presentation is to get better at job interviews and take-home assignments, in an ethical way.
 
 By applying the tips from this presentation into your interviews, you'll _expose the truth_ about yourself and your skills, thereby making it more likely that you're going to find a _suitable_ assignment. That does _not_ mean that you will _get the job_; it means that you will _get the right job_ that's suitable.
 
-# Bonus Disclaimer
+---
+
+### Bonus Disclaimer
 
 This presentation contains my own personal thoughts on this subject, which are based on both my own personal experience as an interviewer and interviewee, as well as conversations with others.
 
 I have a certain _moral_ regarding how interviews should be conducted, which is somewhat strict and different from how others think about this.
 
+---
+
 # Anatomy of the job application process
 
-# Mindset
+---
+
+The anatomy of a job application process can tell you a lot about the things a company is looking for:
+
+---
+
+<Graphviz dot={`digraph {
+  "introductionary interview" -> "technical test"
+  "technical test" -> "technical interview"
+}`} />
+
+---
+
+<Graphviz dot={`digraph {
+  "introductionary interview" -> "second opinion interview"
+}`} />
+
+---
+
+<Graphviz dot={`digraph {
+  "introductionary interview" -> "technical test"
+  "technical test" -> "technical interview"
+  "technical interview" -> "interview with ceo"
+}`} />
+
+---
+
+### Mindset
 
 Rather than seeing the entire application process as something where you _try to convince someone that you are the right person for the job_, I see the entire process as a _conversation between two parties to figure out if they're compatible and could be of use to each other_.
 
+---
+
 # Job interviews
 
-# Example of a personal introductions
+---
+
+### Example of a personal introductions
 
 My name is Joris van de Donk. Rather than just believing that _infrastructure_ should be expressed as code, I believe that _anything_ should be expressed as code. I consider myself to be an advocate of this practice, and hope to inspire others to create fun, creative, engaging things with code. For example, instead of creating presentations in Powerpoint or Google Slides, I prefer to program them myself. This gives me flexibility, and allows me to create some cool things that otherwise wouldn't be easy to achieve. As an example, I once programmed a presentation about making music using code, and made it so that I could use my electric guitar as a slide clicker. It went really well, despite the fact that I don't really know how to play the guitar, and had to ask the audience how to play certain chords!
 

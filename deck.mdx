@@ -404,34 +404,17 @@ Then:
   },
 })}}>
   {(gitgraph) => {
-    // Simulate git commands with Gitgraph API.
     const master = gitgraph.branch("master");
-    master.commit("Initial commit");
-    master.commit("Scaffold project");
+    master.commit("Initial empty commit. Let's do this!");
+    master.commit("Scaffold project, add required dependencies");
     master.commit("Add unit testing framework");
-    master.commit("Added readme with instructions on how to boot up project");
-    master.commit("..");
+    master.commit("Added readme with instructions on how to boot up the project");
+    master.commit("Added docker-compose file, to make booting up the project easier");
     master.commit("Clarified which OS the project was developed and tested on in readme");
     master.commit("..");
     master.tag("v1.0.0");
   }}
 </Gitgraph>
-
-<ul>
-<Appear>
-
-
-* Scaffold the project (e.g. `npm init`, `npm install ...`)
-
-
-* Ensure there's a unit testing framework
-
-
-* Write a readme containing instructions on how to boot up your project, and on which OS it was developed/tested
-
-
-</Appear>
-</ul>
 
 ---
 

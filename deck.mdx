@@ -80,24 +80,47 @@ I have a certain _moral_ regarding how interviews should be conducted, which is 
 
 ---
 
+<Invert>
+
 # Anatomy of the job application process
 
----
-
-The anatomy of a job application process can tell you a lot about the things a company is looking for:
+</Invert>
 
 ---
 
-<Graphviz dot={`digraph {
-  "introductionary interview" -> "technical test"
-  "technical test" -> "technical interview"
-}`} />
+## The anatomy of a job application process can tell you a lot about the things a company is looking for
 
 ---
 
-<Graphviz dot={`digraph {
-  "introductionary interview" -> "second opinion interview"
-}`} />
+<Graphviz dot={`digraph A {
+  c01 [label="introductionary interview"]
+  c02 [label="take-home assignment"]
+  c03 [label="technical interview"]
+  c11 [label="introductionary interview"]
+  c12 [label="second opinion interview"]
+  c21 [label="introductionary interview"]
+  c22 [label="take-home assignment"]
+  c23 [label="technical interview"]
+  c24 [label="interview with ceo"]
+  subgraph cluster_0 {
+    c01 -> c02
+    c02 -> c03
+  }
+  subgraph cluster_1 {
+   c11 -> c12
+  }
+  subgraph cluster_2  {
+  c21 -> c22
+  c22 -> c23
+  c23 -> c24
+  }
+}`} options={{width: 900}}/>
+
+---
+
+### _If possible_, ask ahead what the process will be like!
+
+---
 
 ---
 

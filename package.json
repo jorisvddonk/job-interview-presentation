@@ -13,6 +13,7 @@
   "author": "Joris van de Donk <jorisvddonk@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@gitgraph/react": "^1.5.2",
     "gatsby": "^2.18.12",
     "gatsby-theme-mdx-deck": "^3.0.13",
     "graphviz-react": "^1.0.4",

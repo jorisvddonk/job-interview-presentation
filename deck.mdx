@@ -10,7 +10,8 @@ import {
 } from 'mdx-deck'
 import QRCode from "qrcode.react"
 import { Graphviz } from 'graphviz-react'
-import { WrittenText } from "./components/WrittenText";
+import { WrittenText } from "./components/WrittenText"
+import { Gitgraph, templateExtend, TemplateName } from "@gitgraph/react";
 
 export const themes = [
   dark,
@@ -396,6 +397,25 @@ The first thing you do?
 ---
 
 Then:
+
+<Gitgraph options={{orientation: 'vertical-reverse', template: templateExtend(props.templateName || TemplateName.Metro, {
+  commit: {
+    message: { displayHash: false, displayAuthor: false },
+  },
+})}}>
+  {(gitgraph) => {
+    // Simulate git commands with Gitgraph API.
+    const master = gitgraph.branch("master");
+    master.commit("Initial commit");
+    master.commit("Scaffold project");
+    master.commit("Add unit testing framework");
+    master.commit("Added readme with instructions on how to boot up project");
+    master.commit("..");
+    master.commit("Clarified which OS the project was developed and tested on in readme");
+    master.commit("..");
+    master.tag("v1.0.0");
+  }}
+</Gitgraph>
 
 <ul>
 <Appear>

@@ -75,42 +75,85 @@ That does _not_ mean that you will _get the job_; it means that you will _get th
 
 ---
 
-## The _anatomy_ of a job application process can tell you a lot about the things a company is looking for
+### The _anatomy_ of a job application process can tell you a lot about the things a company is looking for
+
+---
+
+<Graphviz dot={`digraph A {
+  c01 [label="introductionary interview over Skype"]
+  c02 [label="signing the contract"]
+  c01 -> c02
+}`} options={{width: 1200}}/>
+
+<Appear>
+
+Anyone with a good resumé will do ¯\\_(ツ)_/¯
+
+</Appear>
 
 ---
 
 <Graphviz dot={`digraph A {
   c01 [label="introductionary interview"]
   c02 [label="take-home assignment"]
-  c03 [label="technical interview"]
-  c11 [label="introductionary interview"]
-  c12 [label="second opinion interview"]
-  c21 [label="introductionary interview"]
-  c22 [label="take-home assignment"]
-  c23 [label="technical interview"]
-  c24 [label="interview with ceo"]
-  c31 [label="take-home assignment"]
-  c32 [label="technical interview"]
-  subgraph cluster_0 {
-    c01 -> c02
-    c02 -> c03
-  }
-  subgraph cluster_1 {
-   c11 -> c12
-  }
-  subgraph cluster_2  {
-    c21 -> c22
-    c22 -> c23
-    c23 -> c24
-  }
-  subgraph cluster_3  {
-    c31 -> c32
-  }
+  c03 [label="assignment evaluation interview"]
+  c01 -> c02
+  c02 -> c03
 }`} options={{width: 1200}}/>
+
+<Appear>
+
+Need a skilled engineer
+
+</Appear>
 
 ---
 
-### _If possible_, ask ahead what the interview process will be like!
+<Graphviz dot={`digraph A {
+  c11 [label="introductionary interview with engineering manager"]
+  c12 [label="second opinion interview with engineers from different team"]
+  c11 -> c12
+}`} options={{width: 1200}}/>
+
+<Appear>
+
+A good engineering/cultural fit is important. They'll know it when they see it.
+
+</Appear>
+
+---
+
+<Graphviz dot={`digraph A {
+  c21 [label="introductionary interview"]
+  c22 [label="online coding test"]
+  c23 [label="take-home assignment"]
+  c24 [label="assignment evaluation interview"]
+  c25 [label="mob programming session with engineers from the team"]
+  c26 [label="interview with ceo / cto / division manager"]
+  c21 -> c22
+  c22 -> c23
+  c23 -> c24
+  c24 -> c25
+  c25 -> c26
+}`} options={{width: 1200}}/>
+
+<Appear>
+
+You better be the best of the best and a perfect fit!
+
+</Appear>
+
+---
+
+### Find out what the interview process will be like!
+
+<Appear>
+
+Use that to figure out who they're looking for
+
+...and tweak your strats accordingly.
+
+</Appear>
 
 ---
 

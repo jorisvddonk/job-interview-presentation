@@ -376,7 +376,13 @@ An ancient _Software Engineer_ proverb:
 
 ---
 
-These are little projects that ask you to <em>develop a small project</em>, within <em>limited time</em>, so that the interviewees can <em>get an example of the quality of your work</em> and have a <em>reference point to base questions on</em> in a subsequent interview.
+These are projects that are <em>time-constrained</em> and <em>tightly scoped</em>, so that the interviewers can <em>get an example of the quality of your work</em> and have a <em>reference point to base questions on</em> in a <em>subsequent interview</em>.
+
+<Notes>
+
+maybe elaborate on _why_ companies do these? e.g. they provide lots of info for the company whilst they need to dedicate fairly little time to it
+
+</Notes>
 
 ---
 
@@ -392,24 +398,24 @@ These are little projects that ask you to <em>develop a small project</em>, with
 
 ---
 
-As soon as you receive a take-home assignment, you should:
+Tip 1: As soon as you receive a take-home assignment, you should:
 * Ask questions
 * State assumptions
-* State when you will be able to work on it
+* State when you will be able to work on it and hand it in
 
 ---
 
 <WrittenText>
   <p>Hi Person,</p>
-  <p>Would it be okay if I write this in TypeScript?</p>
-  <p>I'm going to assume that the reviewer of my project will be working on an environment in which they can run and build Docker containers.</p>
-  <p>I will be working on this during the weekend, and hope to send you the finished project before the end of Sunday.</p>
+  <p>Would it be okay if I <b>write this in TypeScript?</b></p>
+  <p>I'm going to <b>assume</b> that the reviewer of my project will be working on an environment <em>in which they can</em> <b>run and build Docker containers</b>.</p>
+  <p>I will be working on this during the weekend, and hope to <b>send you the finished project before the end of Sunday</b>.</p>
   <p>Regards, Joris</p>
 </WrittenText>
 
 ---
 
-You should treat these projects like any other project you work on !
+Tip 2: You should treat these projects like any other small project you work on !
 
 ---
 
@@ -443,18 +449,16 @@ Then:
     master.commit("Scaffold project, add required dependencies");
     master.commit("Add unit testing framework");
     master.commit("Added readme with instructions on how to boot up the project");
-    master.commit("Added docker-compose file, to make booting up the project easier");
-    master.commit("Clarified which OS the project was developed and tested on in readme");
+    master.commit("Make booting up project easier with docker-compose");
+    master.commit("First functionality! Can now see a chess board! 🎉")
+    master.commit("Implemented pawns ♟️");
+    master.commit("Switch from Parcel to Webpack");
     master.commit("..");
+    master.commit("Clarified which OS the project was developed and tested on in readme");
     master.tag("v1.0.0");
   }}
 </Gitgraph>
 
----
-
-## Next, write the code!
-
-Focus on _readability_, _understandability_
 
 ---
 
@@ -472,26 +476,16 @@ Focus on _readability_, _understandability_
 
 ---
 
-## Tips
+## More tips
 
 <ul>
 <Appear>
-  <li>Even if not asked for, hand in your entire git repo! Mention that you have included the entire repo when handing it in.</li>
-  <li>Spend more time on your readme than you'd think you should take</li>
-  <li>Follow instructions carefully; if they say you can work a max of 4 hours on it, don't spend more than 4 hours on it!</li>
-  <li>Do <em>not</em> ask anyone for help without disclosing it upfront in your readme</li>
-  <li>The easier a project is to get running locally, the better it is!</li>
-  <li>Docker(compose) is your friend; if it takes you a few minutes to make a dockerfile to get your project running quickly, do so!</li>
-</Appear>
-</ul>
-
----
-
-<ul>
-<Appear>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Hand in your entire git repo! Mention that you have included the entire repo when handing it in.</li>
+  <li>Your git commits can influence and steer the conversation.</li>
+  <li>A good readme matters <b>a lot</b>. Spend time on it!</li>
+  <li>The easier a project is to get running, the better it is!</li>
+  <li>Write foolproof instructions; don't assume someone knows how <inlineCode>npm</inlineCode> works.</li>
+  <li>Mention if you got external help (e.g. from a friend/colleague) or spent more than the allotted amount of time on it.</li>
 </Appear>
 </ul>
 
